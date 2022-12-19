@@ -1,0 +1,73 @@
+
+#include <stdio.h>
+
+int main()
+{
+    
+
+  int n, c, k;
+  scanf("%d", &n);
+   for (k = 1; k <= n; k++)
+  {
+    for (c=1; c <= n-k; c++)
+      printf(" ");
+
+    for (c = 1; c <= 2*k-1; c++)
+      printf("*");
+
+    printf("\n");
+  }
+
+  for (k=1;k<=n-1;k++)
+  {
+    for (c=1;c<=k;c++)
+      printf(" ");
+
+    for (c=1;c<=2*(n-k)-1;c++)
+      printf("*");
+
+    printf("\n");
+  }
+
+  return 0;
+}
+/*{
+    int i,n,j,x;
+    
+    for(i=0;i<=5;i++)
+    {
+         for(j=i;j<=i-5;i--)
+         {
+      
+    for(j=i;j<=5;j++)
+     {
+     printf("*");
+      
+     }
+   
+     printf("\n");
+    
+     
+    
+    }
+}
+}
+/*
+ for(i=5;i<=10;i++)
+    {
+        
+    for(j=i;j<=10;j++)
+     {
+     printf(" *");
+    
+     }
+    
+     printf("\n");
+    }
+}
+*/
+   
+
+    
+
+
