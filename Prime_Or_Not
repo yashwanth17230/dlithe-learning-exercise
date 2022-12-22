@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   int num,i,flag=0;
+       scanf("%d",&num);
+       if(num==1)
+       {
+       printf("Neither prime nor Composite");
+       exit(0);
+       }
+    if(num<=pow(2,64) - 1 && num>=1)
+       for(i=1;i<=num;i++)
+       {
+         
+          if(num%i==0)
+           {
+               flag++;
+           }
+          
+       }
+    if(flag==2)
+        printf("Yes");
+    else
+        printf("No");
+    
+    return 0;
+   
+        
+}
