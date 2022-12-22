@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+
+int max(int x,int y)
+{
+    return x>y?x:y;
+}
+    int min(int x,int y)
+    {
+        return x<y?x:y;
+    }
+    int main()
+    {
+        int a,b,c,d,maximum,minimum=0,mid1,mid2;
+        scanf("%d %d %d %d",&a,&b,&c,&d);
+        maximum=a>b && a>c && a>d?a:(b>c && b>d?b:(c>d?c:d));
+         minimum=a<b && a<c && a<d?a:(b<c && b<d?b:(c<d?c:d));
+        mid2=min(max(a,b),max(c,d));
+        mid1=a+b+c+d-(maximum+minimum+mid2);
+        if(a>=0 && b>=0 && c>=0)
+        {
+        if(mid1>mid2)
+        {
+            printf("%d > %d > %d > %d",maximum,mid1,mid2,minimum);
+        }
+        else
+            printf("%d > %d > %d > %d",maximum,mid1,mid2,minimum);
+        }   
+        else
+            printf("Invalid Input");
+    }
+
+
