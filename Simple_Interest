@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    double p,n,r,rate;
+    scanf("%lf\n%lf\n%lf\n",&p,&n,&r);
+    if(p>0 && n>0 && r>0)
+    {     
+    rate=(p*n*r)/100;
+    printf("%.2lf",rate);
+    } 
+    return 0;
+}
+      
