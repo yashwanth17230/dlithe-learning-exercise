@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    double a,b,c,d;
+    float Sum,Average;
+    scanf("%le %le %le %le",&a,&b,&c,&d);
+    Sum=a+b+c+d;
+    Average=Sum/4;
+    printf("Sum = %.1f\nAverage = %.1f",Sum,Average);
+    
+}
