@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   double p,t,r,si;
+    scanf("%lf\n%lf\n%lf",&p,&t,&r);
+    if(p>0&&r>0&&t>0)
+    {
+    si=p*(pow(((1+t/100)),r))-p ;
+    printf("%.2lf",si);
+    }
+    return 0;
+}
