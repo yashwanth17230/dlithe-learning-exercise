@@ -1,0 +1,25 @@
+        #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include<ctype.h>
+
+int main() {
+
+  long num;
+  
+    scanf("%ld",&num);
+          
+        if(num>=1 && num<=pow(2,63))
+        {
+        if(num%2==0)
+        
+            printf("Even");
+        else
+            printf("Odd");
+        
+        }
+   else
+        printf("Invalid Input");
+   return 0;
+}
