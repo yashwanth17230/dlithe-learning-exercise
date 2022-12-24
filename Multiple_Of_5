@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int i,fnum,lnum;
+    printf("Enter the range to print multiples of 5\n");
+    scanf("%d%d",&fnum,&lnum);
+    i=fnum;
+    do
+    {
+      if((i%5)==0)
+      {
+          printf("%d ",i);
+      }
+      i++;
+    }
+    while(i<=lnum);
+    return 0;
+}
