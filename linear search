@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,a[10],flag=0,n,key;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    scanf("%d",&key);
+    for(i=1;i<=n;i++)
+    {
+        if(a[i]==key)
+        flag++;
+        break;
+    }
+    if(flag==1)
+    printf("found at %d",i+1);
+    else
+    printf("key is not found");
+}
